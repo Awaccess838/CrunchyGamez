@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crunchy Games | Vex3</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH10NX61NN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TH10NX61NN');
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .vex-container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .vex-iframe {
+            flex: 1;
+            width: calc(100% - 320px); /* Full width minus space for ads */
+            height: 100%;
+            border: none;
+        }
+
+        .vex-ads-container {
+            width: 300px; /* Width of the ad container */
+            max-height: 100vh; /* Ensure the ad container fits within the viewport */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .vex-adsbygoogle {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="vex-container">
+        <!-- Game Iframe -->
+        <iframe class="vex-iframe" src="https://buttertoasty.github.io/Bowl/vex/index.html" title="Vex3 Game"></iframe>
+
+        <!-- Google AdSense Ad Unit -->
+        <div class="vex-ads-container">
+            <ins class="vex-adsbygoogle"
+                style="display:block;"
+                data-ad-client="ca-pub-4407596680292212"
+                data-ad-slot="your-ad-slot-id"
+                data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+</body>
+</html>
